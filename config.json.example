@@ -1,0 +1,6 @@
+{
+  "BOT_TOKEN": "your_bot_token_here",
+  "ADMIN_IDS": "your_telegram_id_here",
+  "OPENAI_API_KEY": "your_openai_key_here",
+  "COMPANY_NAME": "Your Company"
+}

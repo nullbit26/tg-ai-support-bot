@@ -1,16 +1,19 @@
-require('dotenv').config();
+const fs = require('fs');
 const { Telegraf, Markup } = require('telegraf');
 const OpenAI = require('openai');
 const { initDB } = require('./database');
 const knowledge = require('./knowledge.json');
 
-const bot = new Telegraf(process.env.BOT_TOKEN);
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+// Load config
+const config = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
+
+const bot = new Telegraf(config.BOT_TOKEN);
+const openai = new OpenAI({ apiKey: config.OPENAI_API_KEY });
 
 let db;
-const ADMIN_IDS = (process.env.ADMIN_IDS || '').split(',').map(s => parseInt(s.trim())).filter(Boolean);
+const ADMIN_IDS = (config.ADMIN_IDS || '').split(',').map(s => parseInt(s.trim())).filter(Boolean);
 const isAdmin = id => ADMIN_IDS.includes(id);
-const COMPANY_NAME = process.env.COMPANY_NAME || 'Our Company';
+const COMPANY_NAME = config.COMPANY_NAME || 'Our Company';
 
 const pendingLeads = new Map();
 

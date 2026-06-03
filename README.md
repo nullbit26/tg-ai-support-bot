@@ -44,19 +44,23 @@ npm install
 ```
 
 ### 2. Configure
-Create `.env` file:
-```env
-BOT_TOKEN=your_bot_token
-ADMIN_IDS=your_telegram_id
-OPENAI_API_KEY=sk-xxx
-BOT_NAME=SupportBot
-COMPANY_NAME=Your Company
+1. Copy `config.json.example` to `config.json`:
+   - Just rename the file
+2. Open `config.json` in Notepad and fill in your values:
+```json
+{
+  "BOT_TOKEN": "your_bot_token_here",
+  "ADMIN_IDS": "your_telegram_id_here",
+  "OPENAI_API_KEY": "your_openai_key_here",
+  "COMPANY_NAME": "Your Company"
+}
 ```
 
-**Get OpenAI API key:**
-1. Go to [platform.openai.com](https://platform.openai.com)
-2. Create account → API Keys → Create new key
-3. Add billing (GPT-4o-mini is very cheap: ~$0.15 per 1M tokens)
+**How to get these values:**
+- **BOT_TOKEN**: Message @BotFather in Telegram, create new bot, copy token
+- **ADMIN_IDS**: Message @userinfobot, copy your ID number
+- **OPENAI_API_KEY**: Go to [platform.openai.com](https://platform.openai.com) → API Keys → Create new key
+  - GPT-4o-mini costs only ~$0.15 per 1,000,000 tokens (about 1000 customer messages)
 
 ### 3. Customize Knowledge Base
 Edit `knowledge.json` with your company info:
@@ -122,8 +126,7 @@ tg-ai-support-bot/
 - **Node.js** — runtime
 - **Telegraf v4** — Telegram Bot framework
 - **OpenAI API** — GPT-4o-mini for responses
-- **better-sqlite3** — local database
-- **dotenv** — configuration
+- **sql.js** — local SQLite database (pure JavaScript, no compilation needed)
 
 ---
 
@@ -161,7 +164,7 @@ GPT-4o-mini pricing (as of 2024):
 ---
 
 ## 🔒 Security
-- API keys in `.env` (not committed)
+- API keys in `config.json` (not committed to Git)
 - SQLite for local data
 - Admin commands protected by ID check
 - No sensitive data in code
