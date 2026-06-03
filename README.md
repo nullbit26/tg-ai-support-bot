@@ -1,3 +1,5 @@
+![Header](1nullbit26.jpg) 
+
 # 🤖 AI Support Bot with GPT Integration
 
 An intelligent Telegram support bot powered by OpenAI GPT. Answers customer questions based on company knowledge base, collects leads, and escalates complex questions to human managers.
