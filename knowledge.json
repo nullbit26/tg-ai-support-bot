@@ -1,0 +1,61 @@
+{
+  "company": "Your Company",
+  "description": "We provide professional services and support to our customers.",
+  "working_hours": "Monday-Friday: 9:00-18:00, Saturday: 10:00-15:00, Sunday: closed",
+  "contacts": {
+    "phone": "+7 (999) 123-45-67",
+    "email": "support@yourcompany.com",
+    "address": "Moscow, Example Street 1"
+  },
+  "services": [
+    {
+      "name": "Consultation",
+      "description": "Free 15-minute consultation to discuss your needs",
+      "price": "Free"
+    },
+    {
+      "name": "Basic Package",
+      "description": "Standard service package for individuals",
+      "price": "From 5000₽"
+    },
+    {
+      "name": "Business Package",
+      "description": "Full solution for small and medium businesses",
+      "price": "From 25000₽"
+    }
+  ],
+  "faq": [
+    {
+      "question": "How to order?",
+      "answer": "You can order through this bot by clicking 'Leave Request' or call us at +7 (999) 123-45-67"
+    },
+    {
+      "question": "What are the working hours?",
+      "answer": "We work Monday-Friday from 9:00 to 18:00, Saturday from 10:00 to 15:00. Sunday is closed."
+    },
+    {
+      "question": "Is there a warranty?",
+      "answer": "Yes, we provide a 30-day warranty on all our services. If you are not satisfied, we will fix it for free."
+    },
+    {
+      "question": "How long does it take?",
+      "answer": "Standard orders take 3-5 business days. Urgent orders can be completed within 24 hours for an additional fee."
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept bank transfer, credit cards, and electronic wallets (SBP, ЮKassa)."
+    },
+    {
+      "question": "Can I get a refund?",
+      "answer": "Yes, full refund is available within 7 days if the service has not been started."
+    },
+    {
+      "question": "Do you work with legal entities?",
+      "answer": "Yes, we work with both individuals and legal entities. All necessary documents are provided."
+    },
+    {
+      "question": "Where are you located?",
+      "answer": "Our office is at Moscow, Example Street 1. You can visit us during working hours."
+    }
+  ]
+}

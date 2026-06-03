@@ -1,0 +1,19 @@
+{
+  "name": "tg-ai-support-bot",
+  "version": "1.0.0",
+  "description": "AI-powered Telegram support bot with OpenAI GPT integration",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "sql.js": "^1.10.3",
+    "dotenv": "^16.4.5",
+    "openai": "^4.52.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
