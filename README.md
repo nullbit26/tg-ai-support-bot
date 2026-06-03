@@ -38,7 +38,7 @@ An intelligent Telegram support bot powered by OpenAI GPT. Answers customer ques
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/yourusername/tg-ai-support-bot.git
+git clone https://github.com/nullbit26/tg-ai-support-bot.git
 cd tg-ai-support-bot
 npm install
 ```
