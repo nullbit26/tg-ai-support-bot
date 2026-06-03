@@ -22,7 +22,7 @@ An intelligent Telegram support bot powered by OpenAI GPT. Answers customer ques
 - 💬 **Direct Reply** — reply to customer questions directly from admin panel
 
 ### AI Behavior
-- Answers based on **knowledge.json** — no hallucinations about company info
+- Answers are grounded in **knowledge.json** 
 - **Escalates** unknown/complex questions to human managers automatically
 - Supports **Russian and English** (responds in user's language)
 - Professional, concise answers (3-4 sentences max)
