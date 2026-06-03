@@ -1,10 +1,19 @@
-# 🤖 AI Support Bot with GPT Integration
+# 🤖 AI Support Bot for Telegram
 
 An intelligent Telegram support bot powered by OpenAI GPT. Answers customer questions based on company knowledge base, collects leads, and escalates complex questions to human managers.
 
 > Built with Node.js + Telegraf + OpenAI GPT-4o-mini + SQLite
 
 ---
+
+## 🎯 Use Cases
+
+Perfect for:
+- 💈 **Salons & Barbershops** — service info, pricing, appointments
+- 👨‍🏫 **Tutors & Coaches** — course info, schedule, FAQs
+- 🏥 **Clinics** — working hours, services, directions
+- 🏢 **Consultants** — lead collection, initial screening
+- 🛍 **Small Businesses** — customer support, order status
 
 ## ✨ Features
 
@@ -115,7 +124,7 @@ tg-ai-support-bot/
 ├── database.js      # SQLite wrapper
 ├── knowledge.json   # Company FAQ and info
 ├── package.json
-├── .env.example
+├── config.json.example
 ├── .gitignore
 └── README.md
 ```
@@ -159,7 +168,7 @@ GPT-4o-mini pricing (as of 2024):
 - Input: $0.15 per 1M tokens
 - Output: $0.60 per 1M tokens
 
-**Example:** 1000 customer questions ≈ $0.50-1.00
+**Rough estimate:** 1000 short questions ≈ $0.50-1.00 (actual cost depends on message length and context)
 
 ---
 
