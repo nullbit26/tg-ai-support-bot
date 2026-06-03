@@ -60,7 +60,7 @@ npm install
 - **BOT_TOKEN**: Message @BotFather in Telegram, create new bot, copy token
 - **ADMIN_IDS**: Message @userinfobot, copy your ID number
 - **OPENAI_API_KEY**: Go to [platform.openai.com](https://platform.openai.com) → API Keys → Create new key
-  - GPT-4o-mini costs only ~$0.15 per 1,000,000 tokens (about 1000 customer messages)
+  - GPT-4o-mini costs $0.15 per 1M input tokens and $0.60 per 1M output tokens
 
 ### 3. Customize Knowledge Base
 Edit `knowledge.json` with your company info:
